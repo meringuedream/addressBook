@@ -1,0 +1,144 @@
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+  min-width: 1165px;
+  overflow-x: scroll;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+:root { 
+	--form-size-width: 25rem;
+  --form-size-height: 16rem;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+nav {
+  display: flex !important;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  justify-content: center;
+  align-items: center;
+  min-height: 10vh;
+  height: 20vh;
+  background-color: rgb(73, 79, 82);
+  color: white;
+  min-width: 1110px;
+  background-image: url('https://images.unsplash.com/photo-1466096115517-bceecbfb6fde?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1950&q=80');
+  background-repeat: no-repeat;
+  background-position: 50% 55%;
+}
+nav > div {
+  padding-bottom: 30px;
+}
+.form-general {
+  position: absolute;
+  top: 35vh;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.form-contact {
+  position: absolute;
+  top: 35vh;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-general h3 {
+  margin-bottom: 1.5rem;
+}
+
+.form-login {
+  width: var(--form-size-width);
+  height: var(--form-size-height);
+}
+
+.title {
+  position: absolute;
+  top: 25vh;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.backBreadcrumb {
+  position: absolute;
+  top: 25vh;
+  left: 15px;
+}
+
+.addressBook {
+  position: absolute;
+  top: 35vh;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+form {
+  width: 400px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 1.25rem
+}
+
+.addressList-buttons {
+  display: inline-flex;
+  flex-direction: row;
+  font-size: 0;
+  vertical-align: baseline;
+  margin: 0 .25em 0 0;
+}
+
+.search-input {
+  width: 10rem;
+  margin-bottom: 5px;
+}
+
+.ui.form .twelve.wide.field {
+  width: 100% !important;
+}
+
+.page-numbers {
+  display: inline-flex;
+  flex-direction: row;
+  font-size: 0;
+  justify-content: space-around;
+  vertical-align: baseline;
+}
+
+div.page-numbers:last-child {
+  margin: 0 !important;
+}
+
+.random-generator{
+  margin-top: 15px;
+  width: 13rem;
+  height: 20rem;
+  display: flex;
+  flex-direction: column;
+  align-content: flex-end;
+  justify-content: space-between;
+}
